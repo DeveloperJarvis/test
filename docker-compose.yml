@@ -9,11 +9,14 @@ x-airflow-common: &airflow-common
     AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
     AIRFLOW__CELERY__RESULT_BACKEND: db+postgresql://airflow:airflow@postgres/airflow
     AIRFLOW__CELERY__BROKER_URL: redis://:@redis:6379/0
+    AIRFLOW__CORE__PLUGINS_FOLDER: /opt/airflow/plugins
     AIRFLOW__CORE__FERNET_KEY: ''
     AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: 'true'
     AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
     AIRFLOW__API__AUTH_BACKENDS: 'airflow.api.auth.backend.basic_auth,airflow.api.auth.backend.session'
     AIRFLOW__SCHEDULER__ENABLE_HEALTH_CHECK: 'true'
+    AIRFLOW__WEBSERVER__RBAC: 'True'
+    AIRFLOW__WEBSERVER__FILTER_BY_PERMISSIONS: 'True'
     _PIP_ADDITIONAL_REQUIREMENTS: ${_PIP_ADDITIONAL_REQUIREMENTS:-pandas openpyxl flask flask-admin flask-wtf xlrd apache-airflow[flask]}
   volumes:
     - ${AIRFLOW_PROJ_DIR:-.}/dags:/opt/airflow/dags
@@ -87,6 +90,7 @@ services:
       - ./plugins:/opt/airflow/plugins
       - ./config:/opt/airflow/config 
       - .:/sources  # <-- add this line
+      - ./config/webserver_config.py:/opt/airflow/webserver_config.py
     depends_on:
       <<: *airflow-common-depends-on
       airflow-init:
@@ -206,16 +210,6 @@ services:
         mkdir -p /opt/airflow/logs
         chown -R "${AIRFLOW_UID}:0" /opt/airflow/logs
 
-        # run define roles script
-        # not working
-        # python /sources/config/create_roles.py
-        # chmod +x /sources/config/create_role.sh
-        # bash /sources/config/create_role.sh
-
-        # run user creation script
-        # bash /sources/config/create_users.sh
-        # python /sources/config/create_user.py
-
         echo "Finished custom setup."
 
         exec /entrypoint airflow version
@@ -244,6 +238,37 @@ services:
       - bash
       - -c
       - airflow
+    networks:
+      - airflow_network
+  
+  airflow-post-setup:
+    <<: *airflow-common
+    depends_on:
+      airflow-webserver:
+        condition: service_healthy
+    volumes:
+      - .:/sources
+    entrypoint: /bin/bash
+    # echo 'Listing permissions of all roles';
+    # python /sources/config/list_permissions.py &&
+    # echo 'Updating password...';
+    #   python /sources/config/update_user_password.py
+    command: >
+      -c "
+      echo 'Waiting for airflow-webserver...';
+      sleep 10;
+      echo 'Creating roles...';
+      python /sources/config/create_roles.py 
+      echo 'Adding custom permissions...'; 
+      python /sources/config/custom_permissions.py 
+      echo 'Creating users...'; 
+      python /sources/config/create_user.py 
+      echo 'Re-assigning role to user...'; 
+      python /sources/config/assign_role_to_user.py
+      echo 'Airflow post setup script completed...';
+      echo '[INFO] Listening at: http://0.0.0.0:8080';
+      echo 'Proceed with login...';
+      "
     networks:
       - airflow_network
   

@@ -190,6 +190,7 @@ then reuse cookie from cookies.txt:
 curl -b cookies.txt http://localhost:8080/home
 ```
 
+## Run after server http://localhost:8080 is up
 ```bash
 # list all permissions for all roles
 docker compose exec airflow-webserver python config/list_permissions.py
@@ -199,6 +200,13 @@ docker compose exec airflow-webserver python config/create_roles.py
 docker compose exec --user airflow airflow-webserver python /opt/airflow/config/custom_permissions.py
 # create users with previously available role and new custom role
 docker compose exec airflow-webserver python config/create_user.py
+# assign role to user
+docker compose exec airflow-webserver python config/assign_role_to_user.py
+# Updating password...
+docker compose exec airflow-webserver python /sources/config/update_user_password.py
+# assign dag permission
+# docker compose exec --user airflow airflow-webserver python /opt/airflow/config/assign_dag_permissions.py
+
 ```
 
 #### dont CTRL+C it

@@ -1,16 +1,26 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Analyst Dashboard</title>
-</head>
-<body>
-    <h1>👩‍💻 Hello, {{ user.username }}!</h1>
-    <p>Welcome to your custom Analyst Dashboard.</p>
-    <ul>
-        <li>🔍 View DAGs</li>
-        <li>📈 Monitor Tasks</li>
-        <li>🧮 Analyze Metrics</li>
-    </ul>
-    <a href="/home">Go to default Airflow UI</a>
-</body>
-</html>
+{% extends "airflow/master.html" %}
+{% block content %}
+<h2>Welcome {{ user.username }}</h2>
+
+<a href="/upload" class="btn btn-primary">
+    <i class="fa fa-upload"></i> Upload Dataset
+</a>
+
+<h3 class="mt-4">Pending Approval</h3>
+<ul>
+    {% for row in pending_data %}
+    <li>
+        {{ row[1] }} (Age: {{ row[2] }}) <span class="badge bg-warning text-dark">Pending</span>
+    </li>
+    {% endfor %}
+</ul>
+
+<h3 class="mt-4">Approved Data</h3>
+<ul>
+    {% for row in approved_data %}
+    <li>
+        {{ row[1] }} (Age: {{ row[2] }}) <span class="badge bg-success">Approved</span>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

@@ -10,9 +10,11 @@ roles = security_manager.get_all_roles()
 for role in roles:
     print(f"Role: {role.name}")
     # print(f"role permissions: {role.permissions}")
-    print(f"Permission: ", end="\0")
-    if role.permissions:
-        for perm in role.permissions:
-            print(f"{perm}, ")
-    else:
-        print("{ }")
+    if "Admin" == role.name:
+        print(f"Permission: ", end="\0")
+        if role.permissions:
+            for perm in role.permissions:
+                print(f"{perm}, ")
+        else:
+            print("{ }")
+        break
