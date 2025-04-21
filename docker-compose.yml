@@ -1,4 +1,4 @@
-version: '3.8'  # Specify the version of Docker Compose
+# version: '3.8'  # Specify the version of Docker Compose
 
 x-airflow-common: &airflow-common
   image: ${AIRFLOW_IMAGE_NAME:-apache/airflow:2.10.5}
@@ -85,6 +85,7 @@ services:
     #   - ./dags:/usr/local/airflow/dags
     #   - ./files:/usr/local/airflow/files
       - ./plugins:/opt/airflow/plugins
+      - ./config:/opt/airflow/config 
       - .:/sources  # <-- add this line
     depends_on:
       <<: *airflow-common-depends-on
@@ -208,12 +209,12 @@ services:
         # run define roles script
         # not working
         # python /sources/config/create_roles.py
-        chmod +x /sources/config/create_role.sh
-        bash /sources/config/create_role.sh
+        # chmod +x /sources/config/create_role.sh
+        # bash /sources/config/create_role.sh
 
         # run user creation script
-        bash /sources/config/create_users.sh
-        python /sources/config/create_user.py
+        # bash /sources/config/create_users.sh
+        # python /sources/config/create_user.py
 
         echo "Finished custom setup."
 

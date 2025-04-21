@@ -1,7 +1,9 @@
 from airflow.plugins_manager import AirflowPlugin
 from flask_appbuilder import BaseView as AppBuilderBaseView, expose
-from flask_login import current_user
+from flask_login import login_user, current_user, login_required
 from flask import redirect
+# from airflow.www.app import csrf
+# from flask_appbuilder.security.decorators import login_required
 import os
 
 
@@ -11,9 +13,11 @@ class HelloView(AppBuilderBaseView):
     template_folder = os.path.join(os.path.dirname(__file__), "custom_home", "templates")
 
     @expose("/")
+    # @csrf.exempt
+    @login_required  # ✅ This automatically handles login redirect properly
     def role_based_home(self):
         if not current_user.is_authenticated:
-            return redirect('/login/')
+            login_user(current_user)  # Ensure the user is reauthenticated if needed
 
         roles = [role.name for role in current_user.roles]
 

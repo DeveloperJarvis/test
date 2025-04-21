@@ -1,50 +1,52 @@
-# config/create_roles.py
-# from airflow.www.security_manager import AirflowSecurityManager
-from airflow.www.security_manager import AirflowSecurityManagerV2
 from airflow.www.app import create_app
-from flask_appbuilder.security.sqla.models import Role, PermissionView
-from flask_appbuilder.security.manager import BaseSecurityManager
 
 app = create_app()
+app.app_context().push()
 
-with app.app_context():
-    # sm: AirflowSecurityManager = app.appbuilder.sm
-    sm: AirflowSecurityManagerV2 = app.appbuilder.sm
+security_manager = app.appbuilder.sm
 
-
-    def create_role(role_name: str, perms: list[tuple[str, str]]):
-        existing_role = sm.find_role(role_name)
-        if existing_role:
-            print(f"🔁 Role '{role_name}' already exists, skipping.")
-            return
-
+def create_role(role_name, perms):
+    role = security_manager.find_role(role_name)
+    if not role:
         print(f"🎯 Creating role: {role_name}")
-        role = sm.add_role(role_name)
+        role = security_manager.add_role(role_name)
+    else:
+        print(f"🔁 Updating role: {role_name}")
 
-        for view_name, perm_name in perms:
-            pv = sm.find_permission_view_menu(perm_name, view_name)
-            if pv:
-                sm.add_permission_role(role, pv)
-                print(f"✅ Added permission: {perm_name} on {view_name}")
+    for perm_name, view_menu_name in perms:
+        print(f"🔐 Granting: {perm_name} on {view_menu_name}")
+        try:
+            permission = security_manager.get_permission(perm_name, view_menu_name)
+            print(f"permission: {permission}")
+            if permission:
+                role.permissions.append(permission)  # Directly add the permission to the role
+                print(f"✅ Granted permission {perm_name} on {view_menu_name}")
             else:
-                print(f"⚠️  Permission {perm_name} on {view_name} not found!")
+                print(f"⚠️ Permission {perm_name} on {view_menu_name} not found.")
+        except Exception as e:
+            print(f"⚠️ Failed to grant permission {perm_name} on {view_menu_name}: {e}")
 
-    # Define your roles and permissions
-    create_role("DataAnalyst", [
-        ("DAGs", "can_read"),
-        ("DAG Runs", "can_read"),
-        ("Task Instances", "can_read"),
-        ("Browse", "can_access_menu"),
-    ])
-
-    create_role("OpsUser", [
-        ("DAGs", "can_read"),
-        ("DAG Runs", "can_read"),
-        ("Task Instances", "can_read"),
-        ("Browse", "can_access_menu"),
-        ("DAGs", "can_trigger"),
-    ])
-
-    create_role("Public", [
-        ("Home", "can_access_menu"),
-    ])
+create_role("DataAnalyst", [
+    ("can_edit", "My Password"),
+    ("can_read", "My Password"),
+    ("can_edit", "My Profile"),
+    ("can_read", "My Profile"),
+    ("can_read", "View Menus"),
+    ("can_create", "DAG Runs"),
+    ("can_read", "DAG Runs"),
+    ("can_edit", "DAG Runs"),
+    ("menu access", "Browse"),
+    ("menu access", "DAGs"),
+    ("menu access", "Datasets"),
+    ("can_read", "DAGs"),
+    ("can_read", "DAG Dependencies"),
+    ("can_read", "DAG Code"),
+    ("can_read", "Datasets"),
+    ("can_read", "Website"),
+    ("can_edit", "DAGs"),
+    ("can_create", "Datasets"),
+    ("menu access", "Hello Dashboard"),
+    ("menu access", "Custom"),
+    ("menu access", "Approve/Reject"),
+    ("menu access", "DataActions"),
+])

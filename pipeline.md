@@ -189,3 +189,50 @@ then reuse cookie from cookies.txt:
 ```bash
 curl -b cookies.txt http://localhost:8080/home
 ```
+
+```bash
+# list all permissions for all roles
+docker compose exec airflow-webserver python config/list_permissions.py
+# create custom role
+docker compose exec airflow-webserver python config/create_roles.py
+# apply necessary custom permissions
+docker compose exec --user airflow airflow-webserver python /opt/airflow/config/custom_permissions.py
+# create users with previously available role and new custom role
+docker compose exec airflow-webserver python config/create_user.py
+```
+
+#### dont CTRL+C it
+```bash
+docker compose up airflow-webserver
+```
+
+```bash
+docker compose exec --user root airflow-webserver pip show flask_appbuilder
+```
+
+create .profile file inside docker
+```bash
+docker compose exec --user airflow airflow-webserver sh -c 'echo "export PATH=\"$PATH:/home/airflow/.local/bin\"" > /home/airflow/.profile'
+```
+
+check if .profile file is setup
+```bash
+docker compose exec --user airflow airflow-webserver cat /home/airflow/.profile
+```
+
+pip version inside docker
+```bash
+docker compose exec --user airflow airflow-webserver /home/airflow/.local/bin/pip --version
+```
+
+show flask_appbuilder details
+```bash
+docker compose exec --user airflow airflow-webserver /home/airflow/.local/bin/pip show flask_appbuilder
+```
+
+```bash
+```
+```bash
+```
+```bash
+```

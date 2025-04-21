@@ -34,7 +34,7 @@ def create_user(username, firstname, lastname, email, role, password):
     return user
 
 # 👇 Add users here
-# create_user("analyst", "Data", "Analyst", "analyst@example.com", "DataAnalyst", "analystpass")
-# create_user("ops", "Ops", "Engineer", "ops@example.com", "OpsUser", "opspass")
+create_user("analyst", "Data", "Analyst", "analyst@example.com", "DataAnalyst", "analyst")
+# create_user("ops", "Ops", "Engineer", "ops@example.com", "OpsUser", "ops")
 create_user("op", "op", "OpRole", "op@example.com", "Op", "op")
 create_user("public", "public", "PublicRole", "public@example.com", "Public", "public")
