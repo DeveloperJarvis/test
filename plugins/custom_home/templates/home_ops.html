@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ops Dashboard</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f0f2f5;
+            margin: 0;
+            padding: 2em;
+        }
+        .container {
+            background: white;
+            max-width: 800px;
+            margin: auto;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        ul {
+            line-height: 1.8;
+        }
+        .note {
+            font-size: 0.9em;
+            color: #888;
+            margin-top: 2em;
+        }
+        a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>🛠 Hello, {{ user.username }}!</h1>
+    <p>Welcome to your custom Ops dashboard. Here's what you can manage:</p>
+
+    <ul>
+        <li>🧩 Monitor DAG health and performance</li>
+        <li>🔄 Trigger DAGs manually for urgent tasks</li>
+        <li>🧰 Access logs and troubleshoot failed tasks</li>
+        <li>📊 Review XComs and task instances</li>
+    </ul>
+
+    <p class="note">Need advanced admin features? <a href="/home">Switch to default Airflow UI</a></p>
+</div>
+</body>
+</html>

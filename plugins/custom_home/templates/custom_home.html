@@ -1,0 +1,26 @@
+{% extends "airflow/main.html" %}
+
+{% block title %}Custom Home{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <h2 class="mb-3">Welcome to the Custom Homepage</h2>
+
+    <p>Hello {{ current_user.username }}!</p>
+
+    <div class="card my-4">
+        <div class="card-body">
+            <h5 class="card-title">Quick Links</h5>
+            <ul>
+                <li><a href="{{ url_for('DagModelView.list') }}">Browse DAGs</a></li>
+                <li><a href="{{ url_for('CustomApprovalView.approve_reject') }}">Go to Approval Dashboard</a></li>
+                <li><a href="{{ url_for('Airflow.index') }}">Back to Default Home</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="alert alert-info" role="alert">
+        This page was rendered from a custom plugin view!
+    </div>
+</div>
+{% endblock %}

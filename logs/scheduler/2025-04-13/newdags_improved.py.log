@@ -1,0 +1,288 @@
+[2025-04-13T22:13:18.696+0000] {processor.py:186} INFO - Started process (PID=82) to work on /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:13:18.697+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/newdags_improved.py for tasks to queue
+[2025-04-13T22:13:18.701+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:13:18.700+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:13:22.063+0000] {processor.py:925} INFO - DAG(s) 'approval_rejection_v2' retrieved from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:13:22.184+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:13:22.183+0000] {override.py:1912} INFO - Created Permission View: can read on DAG:approval_rejection_v2
+[2025-04-13T22:13:22.205+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:13:22.204+0000] {override.py:1912} INFO - Created Permission View: can edit on DAG:approval_rejection_v2
+[2025-04-13T22:13:22.226+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:13:22.226+0000] {override.py:1912} INFO - Created Permission View: can delete on DAG:approval_rejection_v2
+[2025-04-13T22:13:22.248+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:13:22.248+0000] {override.py:1912} INFO - Created Permission View: can create on DAG Run:approval_rejection_v2
+[2025-04-13T22:13:22.266+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:13:22.265+0000] {override.py:1912} INFO - Created Permission View: can read on DAG Run:approval_rejection_v2
+[2025-04-13T22:13:22.286+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:13:22.285+0000] {override.py:1912} INFO - Created Permission View: menu access on DAG Run:approval_rejection_v2
+[2025-04-13T22:13:22.305+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:13:22.305+0000] {override.py:1912} INFO - Created Permission View: can delete on DAG Run:approval_rejection_v2
+[2025-04-13T22:13:22.308+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:13:22.306+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-13T22:13:22.353+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:13:22.348+0000] {dag.py:3262} INFO - Creating ORM DAG for approval_rejection_v2
+[2025-04-13T22:13:22.355+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:13:22.354+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_rejection_v2 to None, run_after=None
+[2025-04-13T22:13:22.385+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/newdags_improved.py took 3.703 seconds
+[2025-04-13T22:13:52.730+0000] {processor.py:186} INFO - Started process (PID=95) to work on /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:13:52.733+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/newdags_improved.py for tasks to queue
+[2025-04-13T22:13:52.739+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:13:52.738+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:13:53.528+0000] {processor.py:925} INFO - DAG(s) 'approval_rejection_v2' retrieved from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:13:53.567+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:13:53.567+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-13T22:13:53.593+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:13:53.592+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_rejection_v2 to None, run_after=None
+[2025-04-13T22:13:53.621+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/newdags_improved.py took 0.902 seconds
+[2025-04-13T22:14:24.189+0000] {processor.py:186} INFO - Started process (PID=110) to work on /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:14:24.190+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/newdags_improved.py for tasks to queue
+[2025-04-13T22:14:24.193+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:14:24.192+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:14:24.756+0000] {processor.py:925} INFO - DAG(s) 'approval_rejection_v2' retrieved from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:14:24.782+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:14:24.781+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-13T22:14:24.796+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:14:24.796+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_rejection_v2 to None, run_after=None
+[2025-04-13T22:14:24.824+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/newdags_improved.py took 0.644 seconds
+[2025-04-13T22:14:55.180+0000] {processor.py:186} INFO - Started process (PID=123) to work on /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:14:55.191+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/newdags_improved.py for tasks to queue
+[2025-04-13T22:14:55.198+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:14:55.195+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:14:56.457+0000] {processor.py:925} INFO - DAG(s) 'approval_rejection_v2' retrieved from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:14:56.524+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:14:56.523+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-13T22:14:56.568+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:14:56.567+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_rejection_v2 to None, run_after=None
+[2025-04-13T22:14:56.634+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/newdags_improved.py took 1.473 seconds
+[2025-04-13T22:15:26.892+0000] {processor.py:186} INFO - Started process (PID=137) to work on /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:15:26.901+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/newdags_improved.py for tasks to queue
+[2025-04-13T22:15:26.905+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:15:26.904+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:15:28.203+0000] {processor.py:925} INFO - DAG(s) 'approval_rejection_v2' retrieved from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:15:28.255+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:15:28.254+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-13T22:15:28.284+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:15:28.283+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_rejection_v2 to None, run_after=None
+[2025-04-13T22:15:28.318+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/newdags_improved.py took 1.458 seconds
+[2025-04-13T22:15:58.516+0000] {processor.py:186} INFO - Started process (PID=149) to work on /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:15:58.528+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/newdags_improved.py for tasks to queue
+[2025-04-13T22:15:58.536+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:15:58.531+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:15:59.955+0000] {processor.py:925} INFO - DAG(s) 'approval_rejection_v2' retrieved from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:15:59.997+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:15:59.997+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-13T22:16:00.025+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:16:00.024+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_rejection_v2 to None, run_after=None
+[2025-04-13T22:16:00.054+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/newdags_improved.py took 1.577 seconds
+[2025-04-13T22:16:30.226+0000] {processor.py:186} INFO - Started process (PID=162) to work on /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:16:30.228+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/newdags_improved.py for tasks to queue
+[2025-04-13T22:16:30.231+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:16:30.230+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:16:31.064+0000] {processor.py:925} INFO - DAG(s) 'approval_rejection_v2' retrieved from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:16:31.098+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:16:31.098+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-13T22:16:31.116+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:16:31.116+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_rejection_v2 to None, run_after=None
+[2025-04-13T22:16:31.144+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/newdags_improved.py took 0.928 seconds
+[2025-04-13T22:17:01.457+0000] {processor.py:186} INFO - Started process (PID=175) to work on /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:17:01.458+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/newdags_improved.py for tasks to queue
+[2025-04-13T22:17:01.461+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:17:01.460+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:17:01.980+0000] {processor.py:925} INFO - DAG(s) 'approval_rejection_v2' retrieved from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:17:02.008+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:17:02.008+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-13T22:17:02.024+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:17:02.023+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_rejection_v2 to None, run_after=None
+[2025-04-13T22:17:02.044+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/newdags_improved.py took 0.595 seconds
+[2025-04-13T22:17:32.097+0000] {processor.py:186} INFO - Started process (PID=189) to work on /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:17:32.099+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/newdags_improved.py for tasks to queue
+[2025-04-13T22:17:32.103+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:17:32.102+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:17:32.759+0000] {processor.py:925} INFO - DAG(s) 'approval_rejection_v2' retrieved from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:17:32.784+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:17:32.783+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-13T22:17:32.797+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:17:32.797+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_rejection_v2 to None, run_after=None
+[2025-04-13T22:17:32.822+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/newdags_improved.py took 0.733 seconds
+[2025-04-13T22:18:03.669+0000] {processor.py:186} INFO - Started process (PID=203) to work on /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:18:03.670+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/newdags_improved.py for tasks to queue
+[2025-04-13T22:18:03.674+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:18:03.674+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:18:04.449+0000] {processor.py:925} INFO - DAG(s) 'approval_rejection_v2' retrieved from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:18:04.489+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:18:04.488+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-13T22:18:04.513+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:18:04.513+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_rejection_v2 to None, run_after=None
+[2025-04-13T22:18:04.556+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/newdags_improved.py took 0.897 seconds
+[2025-04-13T22:18:34.920+0000] {processor.py:186} INFO - Started process (PID=216) to work on /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:18:34.923+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/newdags_improved.py for tasks to queue
+[2025-04-13T22:18:34.927+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:18:34.926+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:18:35.747+0000] {processor.py:925} INFO - DAG(s) 'approval_rejection_v2' retrieved from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:18:35.773+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:18:35.773+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-13T22:18:35.787+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:18:35.787+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_rejection_v2 to None, run_after=None
+[2025-04-13T22:18:35.811+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/newdags_improved.py took 0.912 seconds
+[2025-04-13T22:19:06.103+0000] {processor.py:186} INFO - Started process (PID=229) to work on /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:19:06.108+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/newdags_improved.py for tasks to queue
+[2025-04-13T22:19:06.113+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:19:06.112+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:19:07.084+0000] {processor.py:925} INFO - DAG(s) 'approval_rejection_v2' retrieved from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:19:07.129+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:19:07.128+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-13T22:19:07.156+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:19:07.155+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_rejection_v2 to None, run_after=None
+[2025-04-13T22:19:07.192+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/newdags_improved.py took 1.111 seconds
+[2025-04-13T22:19:37.510+0000] {processor.py:186} INFO - Started process (PID=248) to work on /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:19:37.511+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/newdags_improved.py for tasks to queue
+[2025-04-13T22:19:37.518+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:19:37.517+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:19:38.437+0000] {processor.py:925} INFO - DAG(s) 'approval_rejection_v2' retrieved from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:19:38.473+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:19:38.473+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-13T22:19:38.495+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:19:38.494+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_rejection_v2 to None, run_after=None
+[2025-04-13T22:19:38.520+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/newdags_improved.py took 1.021 seconds
+[2025-04-13T22:20:08.794+0000] {processor.py:186} INFO - Started process (PID=261) to work on /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:20:08.795+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/newdags_improved.py for tasks to queue
+[2025-04-13T22:20:08.798+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:20:08.798+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:20:09.489+0000] {processor.py:925} INFO - DAG(s) 'approval_rejection_v2' retrieved from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:20:09.522+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:20:09.522+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-13T22:20:09.545+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:20:09.545+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_rejection_v2 to None, run_after=None
+[2025-04-13T22:20:09.579+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/newdags_improved.py took 0.795 seconds
+[2025-04-13T22:20:39.654+0000] {processor.py:186} INFO - Started process (PID=273) to work on /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:20:39.663+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/newdags_improved.py for tasks to queue
+[2025-04-13T22:20:39.670+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:20:39.669+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:20:40.866+0000] {processor.py:925} INFO - DAG(s) 'approval_rejection_v2' retrieved from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:20:40.908+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:20:40.907+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-13T22:20:40.932+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:20:40.932+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_rejection_v2 to None, run_after=None
+[2025-04-13T22:20:40.986+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/newdags_improved.py took 1.352 seconds
+[2025-04-13T22:21:11.347+0000] {processor.py:186} INFO - Started process (PID=287) to work on /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:21:11.349+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/newdags_improved.py for tasks to queue
+[2025-04-13T22:21:11.355+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:21:11.355+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:21:12.157+0000] {processor.py:925} INFO - DAG(s) 'approval_rejection_v2' retrieved from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:21:12.180+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:21:12.180+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-13T22:21:12.195+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:21:12.195+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_rejection_v2 to None, run_after=None
+[2025-04-13T22:21:12.216+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/newdags_improved.py took 0.885 seconds
+[2025-04-13T22:21:42.495+0000] {processor.py:186} INFO - Started process (PID=300) to work on /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:21:42.496+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/newdags_improved.py for tasks to queue
+[2025-04-13T22:21:42.500+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:21:42.499+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:21:43.312+0000] {processor.py:925} INFO - DAG(s) 'approval_rejection_v2' retrieved from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:21:43.351+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:21:43.350+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-13T22:21:43.374+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:21:43.373+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_rejection_v2 to None, run_after=None
+[2025-04-13T22:21:43.401+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/newdags_improved.py took 0.917 seconds
+[2025-04-13T22:22:13.722+0000] {processor.py:186} INFO - Started process (PID=313) to work on /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:22:13.723+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/newdags_improved.py for tasks to queue
+[2025-04-13T22:22:13.727+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:22:13.727+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:22:14.797+0000] {processor.py:925} INFO - DAG(s) 'approval_rejection_v2' retrieved from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:22:14.855+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:22:14.854+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-13T22:22:14.884+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:22:14.883+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_rejection_v2 to None, run_after=None
+[2025-04-13T22:22:14.962+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/newdags_improved.py took 1.253 seconds
+[2025-04-13T22:22:45.069+0000] {processor.py:186} INFO - Started process (PID=327) to work on /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:22:45.071+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/newdags_improved.py for tasks to queue
+[2025-04-13T22:22:45.074+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:22:45.074+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:22:45.637+0000] {processor.py:925} INFO - DAG(s) 'approval_rejection_v2' retrieved from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:22:45.661+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:22:45.660+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-13T22:22:45.677+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:22:45.676+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_rejection_v2 to None, run_after=None
+[2025-04-13T22:22:45.698+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/newdags_improved.py took 0.636 seconds
+[2025-04-13T22:23:16.215+0000] {processor.py:186} INFO - Started process (PID=340) to work on /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:23:16.215+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/newdags_improved.py for tasks to queue
+[2025-04-13T22:23:16.219+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:23:16.218+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:23:16.765+0000] {processor.py:925} INFO - DAG(s) 'approval_rejection_v2' retrieved from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:23:16.788+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:23:16.788+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-13T22:23:16.803+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:23:16.803+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_rejection_v2 to None, run_after=None
+[2025-04-13T22:23:16.831+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/newdags_improved.py took 0.624 seconds
+[2025-04-13T22:23:47.521+0000] {processor.py:186} INFO - Started process (PID=354) to work on /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:23:47.523+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/newdags_improved.py for tasks to queue
+[2025-04-13T22:23:47.528+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:23:47.527+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:23:48.297+0000] {processor.py:925} INFO - DAG(s) 'approval_rejection_v2' retrieved from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:23:48.344+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:23:48.343+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-13T22:23:48.368+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:23:48.368+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_rejection_v2 to None, run_after=None
+[2025-04-13T22:23:48.408+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/newdags_improved.py took 0.908 seconds
+[2025-04-13T22:24:18.884+0000] {processor.py:186} INFO - Started process (PID=367) to work on /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:24:18.885+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/newdags_improved.py for tasks to queue
+[2025-04-13T22:24:18.889+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:24:18.889+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:24:19.713+0000] {processor.py:925} INFO - DAG(s) 'approval_rejection_v2' retrieved from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:24:19.752+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:24:19.751+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-13T22:24:19.773+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:24:19.773+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_rejection_v2 to None, run_after=None
+[2025-04-13T22:24:19.805+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/newdags_improved.py took 0.933 seconds
+[2025-04-13T22:24:50.119+0000] {processor.py:186} INFO - Started process (PID=380) to work on /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:24:50.120+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/newdags_improved.py for tasks to queue
+[2025-04-13T22:24:50.123+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:24:50.123+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:24:50.897+0000] {processor.py:925} INFO - DAG(s) 'approval_rejection_v2' retrieved from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:24:50.938+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:24:50.937+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-13T22:24:50.959+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:24:50.958+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_rejection_v2 to None, run_after=None
+[2025-04-13T22:24:50.992+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/newdags_improved.py took 0.884 seconds
+[2025-04-13T22:25:21.325+0000] {processor.py:186} INFO - Started process (PID=394) to work on /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:25:21.327+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/newdags_improved.py for tasks to queue
+[2025-04-13T22:25:21.330+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:25:21.330+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:25:22.068+0000] {processor.py:925} INFO - DAG(s) 'approval_rejection_v2' retrieved from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:25:22.093+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:25:22.092+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-13T22:25:22.108+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:25:22.108+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_rejection_v2 to None, run_after=None
+[2025-04-13T22:25:22.130+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/newdags_improved.py took 0.817 seconds
+[2025-04-13T22:25:52.508+0000] {processor.py:186} INFO - Started process (PID=407) to work on /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:25:52.509+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/newdags_improved.py for tasks to queue
+[2025-04-13T22:25:52.511+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:25:52.511+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:25:53.062+0000] {processor.py:925} INFO - DAG(s) 'approval_rejection_v2' retrieved from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:25:53.095+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:25:53.094+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-13T22:25:53.116+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:25:53.116+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_rejection_v2 to None, run_after=None
+[2025-04-13T22:25:53.146+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/newdags_improved.py took 0.645 seconds
+[2025-04-13T22:26:24.005+0000] {processor.py:186} INFO - Started process (PID=420) to work on /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:26:24.007+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/newdags_improved.py for tasks to queue
+[2025-04-13T22:26:24.011+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:26:24.010+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:26:24.757+0000] {processor.py:925} INFO - DAG(s) 'approval_rejection_v2' retrieved from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:26:24.784+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:26:24.784+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-13T22:26:24.801+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:26:24.801+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_rejection_v2 to None, run_after=None
+[2025-04-13T22:26:24.848+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/newdags_improved.py took 0.847 seconds
+[2025-04-13T22:26:55.347+0000] {processor.py:186} INFO - Started process (PID=433) to work on /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:26:55.349+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/newdags_improved.py for tasks to queue
+[2025-04-13T22:26:55.353+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:26:55.352+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:26:56.268+0000] {processor.py:925} INFO - DAG(s) 'approval_rejection_v2' retrieved from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:26:56.299+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:26:56.298+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-13T22:26:56.321+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:26:56.321+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_rejection_v2 to None, run_after=None
+[2025-04-13T22:26:56.349+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/newdags_improved.py took 1.012 seconds
+[2025-04-13T22:27:26.786+0000] {processor.py:186} INFO - Started process (PID=446) to work on /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:27:26.788+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/newdags_improved.py for tasks to queue
+[2025-04-13T22:27:26.791+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:27:26.791+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:27:27.654+0000] {processor.py:925} INFO - DAG(s) 'approval_rejection_v2' retrieved from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:27:27.690+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:27:27.690+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-13T22:27:27.716+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:27:27.716+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_rejection_v2 to None, run_after=None
+[2025-04-13T22:27:27.741+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/newdags_improved.py took 0.966 seconds
+[2025-04-13T22:27:58.060+0000] {processor.py:186} INFO - Started process (PID=459) to work on /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:27:58.061+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/newdags_improved.py for tasks to queue
+[2025-04-13T22:27:58.065+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:27:58.065+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:27:58.815+0000] {processor.py:925} INFO - DAG(s) 'approval_rejection_v2' retrieved from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:27:58.856+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:27:58.855+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-13T22:27:58.876+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:27:58.876+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_rejection_v2 to None, run_after=None
+[2025-04-13T22:27:58.918+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/newdags_improved.py took 0.870 seconds
+[2025-04-13T22:28:29.242+0000] {processor.py:186} INFO - Started process (PID=473) to work on /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:28:29.244+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/newdags_improved.py for tasks to queue
+[2025-04-13T22:28:29.248+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:28:29.247+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:28:30.209+0000] {processor.py:925} INFO - DAG(s) 'approval_rejection_v2' retrieved from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:28:30.255+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:28:30.254+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-13T22:28:30.279+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:28:30.278+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_rejection_v2 to None, run_after=None
+[2025-04-13T22:28:30.311+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/newdags_improved.py took 1.079 seconds
+[2025-04-13T22:29:00.417+0000] {processor.py:186} INFO - Started process (PID=486) to work on /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:29:00.418+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/newdags_improved.py for tasks to queue
+[2025-04-13T22:29:00.420+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:29:00.420+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:29:01.125+0000] {processor.py:925} INFO - DAG(s) 'approval_rejection_v2' retrieved from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:29:01.152+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:29:01.152+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-13T22:29:01.169+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:29:01.169+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_rejection_v2 to None, run_after=None
+[2025-04-13T22:29:01.212+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/newdags_improved.py took 0.803 seconds
+[2025-04-13T22:29:31.658+0000] {processor.py:186} INFO - Started process (PID=499) to work on /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:29:31.660+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/newdags_improved.py for tasks to queue
+[2025-04-13T22:29:31.664+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:29:31.663+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:29:32.850+0000] {processor.py:925} INFO - DAG(s) 'approval_rejection_v2' retrieved from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:29:33.017+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:29:33.016+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-13T22:29:33.096+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:29:33.090+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_rejection_v2 to None, run_after=None
+[2025-04-13T22:29:33.158+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/newdags_improved.py took 1.511 seconds
+[2025-04-13T22:30:03.447+0000] {processor.py:186} INFO - Started process (PID=512) to work on /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:30:03.448+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/newdags_improved.py for tasks to queue
+[2025-04-13T22:30:03.451+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:30:03.450+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:30:04.035+0000] {processor.py:925} INFO - DAG(s) 'approval_rejection_v2' retrieved from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:30:04.062+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:30:04.062+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-13T22:30:04.083+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:30:04.083+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_rejection_v2 to None, run_after=None
+[2025-04-13T22:30:04.118+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/newdags_improved.py took 0.678 seconds
+[2025-04-13T22:30:34.195+0000] {processor.py:186} INFO - Started process (PID=525) to work on /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:30:34.198+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/newdags_improved.py for tasks to queue
+[2025-04-13T22:30:34.201+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:30:34.201+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:30:34.775+0000] {processor.py:925} INFO - DAG(s) 'approval_rejection_v2' retrieved from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:30:34.799+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:30:34.799+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-13T22:30:34.813+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:30:34.813+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_rejection_v2 to None, run_after=None
+[2025-04-13T22:30:34.838+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/newdags_improved.py took 0.653 seconds
+[2025-04-13T22:31:05.826+0000] {processor.py:186} INFO - Started process (PID=539) to work on /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:31:05.827+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/newdags_improved.py for tasks to queue
+[2025-04-13T22:31:05.831+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:31:05.831+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:31:06.720+0000] {processor.py:925} INFO - DAG(s) 'approval_rejection_v2' retrieved from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:31:06.762+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:31:06.762+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-13T22:31:06.791+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:31:06.790+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_rejection_v2 to None, run_after=None
+[2025-04-13T22:31:06.825+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/newdags_improved.py took 1.010 seconds
+[2025-04-13T22:31:37.038+0000] {processor.py:186} INFO - Started process (PID=553) to work on /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:31:37.039+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/newdags_improved.py for tasks to queue
+[2025-04-13T22:31:37.043+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:31:37.042+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:31:37.854+0000] {processor.py:925} INFO - DAG(s) 'approval_rejection_v2' retrieved from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:31:37.891+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:31:37.891+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-13T22:31:37.910+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:31:37.909+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_rejection_v2 to None, run_after=None
+[2025-04-13T22:31:37.938+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/newdags_improved.py took 0.909 seconds
+[2025-04-13T22:32:08.199+0000] {processor.py:186} INFO - Started process (PID=566) to work on /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:32:08.200+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/newdags_improved.py for tasks to queue
+[2025-04-13T22:32:08.202+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:32:08.202+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:32:08.757+0000] {processor.py:925} INFO - DAG(s) 'approval_rejection_v2' retrieved from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:32:08.782+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:32:08.782+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-13T22:32:08.797+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:32:08.797+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_rejection_v2 to None, run_after=None
+[2025-04-13T22:32:08.825+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/newdags_improved.py took 0.636 seconds
+[2025-04-13T22:32:39.174+0000] {processor.py:186} INFO - Started process (PID=580) to work on /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:32:39.176+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/newdags_improved.py for tasks to queue
+[2025-04-13T22:32:39.179+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:32:39.179+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:32:39.872+0000] {processor.py:925} INFO - DAG(s) 'approval_rejection_v2' retrieved from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:32:39.910+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:32:39.909+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-13T22:32:39.927+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:32:39.927+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_rejection_v2 to None, run_after=None
+[2025-04-13T22:32:39.967+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/newdags_improved.py took 0.803 seconds
+[2025-04-13T22:33:10.362+0000] {processor.py:186} INFO - Started process (PID=599) to work on /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:33:10.364+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/newdags_improved.py for tasks to queue
+[2025-04-13T22:33:10.366+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:33:10.366+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:33:10.988+0000] {processor.py:925} INFO - DAG(s) 'approval_rejection_v2' retrieved from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:33:11.015+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:33:11.015+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-13T22:33:11.030+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:33:11.029+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_rejection_v2 to None, run_after=None
+[2025-04-13T22:33:11.056+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/newdags_improved.py took 0.705 seconds
+[2025-04-13T22:33:41.519+0000] {processor.py:186} INFO - Started process (PID=612) to work on /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:33:41.524+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/newdags_improved.py for tasks to queue
+[2025-04-13T22:33:41.533+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:33:41.532+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:33:42.520+0000] {processor.py:925} INFO - DAG(s) 'approval_rejection_v2' retrieved from /opt/airflow/dags/newdags_improved.py
+[2025-04-13T22:33:42.559+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:33:42.558+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-13T22:33:42.581+0000] {logging_mixin.py:190} INFO - [2025-04-13T22:33:42.581+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_rejection_v2 to None, run_after=None
+[2025-04-13T22:33:42.626+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/newdags_improved.py took 1.136 seconds

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head><title>Review Data</title></head>
+<body>
+    <h1>Pending Data Review</h1>
+    {% with messages = get_flashed_messages(with_categories=True) %}
+      {% if messages %}
+        {% for category, message in messages %}
+            {% set styles = {
+                'success': 'background-color:#d4edda; color:#155724;',
+                'warning': 'background-color:#fff3cd; color:#856404;',
+                'danger': 'background-color:#f8d7da; color:#721c24;',
+                'info': 'background-color:#d1ecf1; color:#0c5460;'
+            } %}
+            
+            <div style="padding:10px; margin-bottom:10px; border-radius:5px; {{ styles.get(category, styles['info']) }}">
+            {{ message }}
+            </div>        
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+    {% if data %}
+    <table border="1">
+        <thead>
+            <tr><th>ID</th><th>Name</th><th>Age</th><th>Action</th></tr>
+        </thead>
+        <tbody>
+        {% for row in data %}
+            <tr>
+                <td>{{ row.id }}</td>
+                <td>{{ row.name }}</td>
+                <td>{{ row.age }}</td>
+                <td>
+                    <form method="post" action="/approve/{{ row.id }}" style="display:inline">
+                        <button type="submit">Approve</button>
+                    </form>
+                    <form method="post" action="/reject/{{ row.id }}" style="display:inline">
+                        <button type="submit">Reject</button>
+                    </form>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    {% else %}
+        <p>No data pending approval.</p>
+    {% endif %}
+    <br><a href="/upload">Upload More Data</a>
+</body>
+</html>

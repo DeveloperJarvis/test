@@ -1,0 +1,18 @@
+<!-- plugins/custom_home/templates/default_home.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Default Dashboard</title>
+</head>
+<body>
+    <h1>Welcome, {{ user.username }}!</h1>
+    <p>This is the default dashboard because your role doesn't match a specific view.</p>
+    <form method="post" action="/review" style="display:inline">
+        <button type="submit">Approve</button>
+    </form>
+    <form method="post" action="/upload" style="display:inline">
+        <button type="submit">Reject</button>
+    </form>
+    <a href="/home">Go to standard Airflow UI</a>
+</body>
+</html>

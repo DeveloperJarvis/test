@@ -1,0 +1,175 @@
+[2025-04-16T03:58:54.448+0000] {processor.py:186} INFO - Started process (PID=133) to work on /opt/airflow/dags/approval_workflow.py
+[2025-04-16T03:58:54.457+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/approval_workflow.py for tasks to queue
+[2025-04-16T03:58:54.468+0000] {logging_mixin.py:190} INFO - [2025-04-16T03:58:54.467+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/approval_workflow.py
+[2025-04-16T03:58:56.056+0000] {processor.py:925} INFO - DAG(s) 'approval_workflow' retrieved from /opt/airflow/dags/approval_workflow.py
+[2025-04-16T03:58:56.224+0000] {logging_mixin.py:190} INFO - [2025-04-16T03:58:56.223+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-16T03:58:56.239+0000] {logging_mixin.py:190} INFO - [2025-04-16T03:58:56.238+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_workflow to None, run_after=None
+[2025-04-16T03:58:56.272+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/approval_workflow.py took 1.869 seconds
+[2025-04-16T03:59:26.567+0000] {processor.py:186} INFO - Started process (PID=150) to work on /opt/airflow/dags/approval_workflow.py
+[2025-04-16T03:59:26.575+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/approval_workflow.py for tasks to queue
+[2025-04-16T03:59:26.578+0000] {logging_mixin.py:190} INFO - [2025-04-16T03:59:26.577+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/approval_workflow.py
+[2025-04-16T03:59:27.482+0000] {processor.py:925} INFO - DAG(s) 'approval_workflow' retrieved from /opt/airflow/dags/approval_workflow.py
+[2025-04-16T03:59:27.513+0000] {logging_mixin.py:190} INFO - [2025-04-16T03:59:27.513+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-16T03:59:27.534+0000] {logging_mixin.py:190} INFO - [2025-04-16T03:59:27.534+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_workflow to None, run_after=None
+[2025-04-16T03:59:27.564+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/approval_workflow.py took 1.005 seconds
+[2025-04-16T03:59:57.831+0000] {processor.py:186} INFO - Started process (PID=162) to work on /opt/airflow/dags/approval_workflow.py
+[2025-04-16T03:59:57.833+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/approval_workflow.py for tasks to queue
+[2025-04-16T03:59:57.837+0000] {logging_mixin.py:190} INFO - [2025-04-16T03:59:57.836+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/approval_workflow.py
+[2025-04-16T03:59:58.968+0000] {processor.py:925} INFO - DAG(s) 'approval_workflow' retrieved from /opt/airflow/dags/approval_workflow.py
+[2025-04-16T03:59:59.074+0000] {logging_mixin.py:190} INFO - [2025-04-16T03:59:59.074+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-16T03:59:59.111+0000] {logging_mixin.py:190} INFO - [2025-04-16T03:59:59.111+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_workflow to None, run_after=None
+[2025-04-16T03:59:59.168+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/approval_workflow.py took 1.353 seconds
+[2025-04-16T04:00:29.565+0000] {processor.py:186} INFO - Started process (PID=174) to work on /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:00:29.576+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/approval_workflow.py for tasks to queue
+[2025-04-16T04:00:29.583+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:00:29.582+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:00:30.278+0000] {processor.py:925} INFO - DAG(s) 'approval_workflow' retrieved from /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:00:30.311+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:00:30.310+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-16T04:00:30.331+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:00:30.331+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_workflow to None, run_after=None
+[2025-04-16T04:00:30.350+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/approval_workflow.py took 0.806 seconds
+[2025-04-16T04:01:00.683+0000] {processor.py:186} INFO - Started process (PID=186) to work on /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:01:00.692+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/approval_workflow.py for tasks to queue
+[2025-04-16T04:01:00.695+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:01:00.694+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:01:01.213+0000] {processor.py:925} INFO - DAG(s) 'approval_workflow' retrieved from /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:01:01.233+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:01:01.232+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-16T04:01:01.246+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:01:01.246+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_workflow to None, run_after=None
+[2025-04-16T04:01:01.279+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/approval_workflow.py took 0.611 seconds
+[2025-04-16T04:01:31.695+0000] {processor.py:186} INFO - Started process (PID=198) to work on /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:01:31.696+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/approval_workflow.py for tasks to queue
+[2025-04-16T04:01:31.699+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:01:31.699+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:01:32.238+0000] {processor.py:925} INFO - DAG(s) 'approval_workflow' retrieved from /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:01:32.263+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:01:32.262+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-16T04:01:32.278+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:01:32.278+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_workflow to None, run_after=None
+[2025-04-16T04:01:32.304+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/approval_workflow.py took 0.620 seconds
+[2025-04-16T04:02:02.607+0000] {processor.py:186} INFO - Started process (PID=210) to work on /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:02:02.615+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/approval_workflow.py for tasks to queue
+[2025-04-16T04:02:02.618+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:02:02.618+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:02:03.136+0000] {processor.py:925} INFO - DAG(s) 'approval_workflow' retrieved from /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:02:03.162+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:02:03.162+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-16T04:02:03.184+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:02:03.184+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_workflow to None, run_after=None
+[2025-04-16T04:02:03.217+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/approval_workflow.py took 0.623 seconds
+[2025-04-16T04:02:33.287+0000] {processor.py:186} INFO - Started process (PID=222) to work on /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:02:33.296+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/approval_workflow.py for tasks to queue
+[2025-04-16T04:02:33.303+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:02:33.300+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:02:34.110+0000] {processor.py:925} INFO - DAG(s) 'approval_workflow' retrieved from /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:02:34.142+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:02:34.141+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-16T04:02:34.160+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:02:34.160+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_workflow to None, run_after=None
+[2025-04-16T04:02:34.195+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/approval_workflow.py took 0.924 seconds
+[2025-04-16T04:03:04.577+0000] {processor.py:186} INFO - Started process (PID=234) to work on /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:03:04.585+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/approval_workflow.py for tasks to queue
+[2025-04-16T04:03:04.589+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:03:04.588+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:03:05.200+0000] {processor.py:925} INFO - DAG(s) 'approval_workflow' retrieved from /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:03:05.220+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:03:05.219+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-16T04:03:05.233+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:03:05.233+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_workflow to None, run_after=None
+[2025-04-16T04:03:05.252+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/approval_workflow.py took 0.684 seconds
+[2025-04-16T04:03:35.517+0000] {processor.py:186} INFO - Started process (PID=246) to work on /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:03:35.526+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/approval_workflow.py for tasks to queue
+[2025-04-16T04:03:35.529+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:03:35.528+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:03:36.283+0000] {processor.py:925} INFO - DAG(s) 'approval_workflow' retrieved from /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:03:36.304+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:03:36.304+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-16T04:03:36.317+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:03:36.317+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_workflow to None, run_after=None
+[2025-04-16T04:03:36.336+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/approval_workflow.py took 0.827 seconds
+[2025-04-16T04:04:06.769+0000] {processor.py:186} INFO - Started process (PID=258) to work on /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:04:06.775+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/approval_workflow.py for tasks to queue
+[2025-04-16T04:04:06.779+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:04:06.779+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:04:07.233+0000] {processor.py:925} INFO - DAG(s) 'approval_workflow' retrieved from /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:04:07.257+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:04:07.256+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-16T04:04:07.274+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:04:07.274+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_workflow to None, run_after=None
+[2025-04-16T04:04:07.294+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/approval_workflow.py took 0.544 seconds
+[2025-04-16T04:04:37.576+0000] {processor.py:186} INFO - Started process (PID=270) to work on /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:04:37.589+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/approval_workflow.py for tasks to queue
+[2025-04-16T04:04:37.592+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:04:37.592+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:04:38.056+0000] {processor.py:925} INFO - DAG(s) 'approval_workflow' retrieved from /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:04:38.075+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:04:38.075+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-16T04:04:38.086+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:04:38.086+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_workflow to None, run_after=None
+[2025-04-16T04:04:38.110+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/approval_workflow.py took 0.551 seconds
+[2025-04-16T04:05:08.455+0000] {processor.py:186} INFO - Started process (PID=282) to work on /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:05:08.465+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/approval_workflow.py for tasks to queue
+[2025-04-16T04:05:08.470+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:05:08.469+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:05:08.945+0000] {processor.py:925} INFO - DAG(s) 'approval_workflow' retrieved from /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:05:08.963+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:05:08.963+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-16T04:05:08.974+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:05:08.974+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_workflow to None, run_after=None
+[2025-04-16T04:05:08.993+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/approval_workflow.py took 0.557 seconds
+[2025-04-16T04:05:39.287+0000] {processor.py:186} INFO - Started process (PID=294) to work on /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:05:39.296+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/approval_workflow.py for tasks to queue
+[2025-04-16T04:05:39.299+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:05:39.298+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:05:39.892+0000] {processor.py:925} INFO - DAG(s) 'approval_workflow' retrieved from /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:05:39.912+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:05:39.912+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-16T04:05:39.931+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:05:39.931+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_workflow to None, run_after=None
+[2025-04-16T04:05:39.961+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/approval_workflow.py took 0.693 seconds
+[2025-04-16T04:06:10.919+0000] {processor.py:186} INFO - Started process (PID=306) to work on /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:06:10.920+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/approval_workflow.py for tasks to queue
+[2025-04-16T04:06:10.922+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:06:10.922+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:06:11.406+0000] {processor.py:925} INFO - DAG(s) 'approval_workflow' retrieved from /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:06:11.423+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:06:11.423+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-16T04:06:11.437+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:06:11.436+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_workflow to None, run_after=None
+[2025-04-16T04:06:11.460+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/approval_workflow.py took 0.553 seconds
+[2025-04-16T04:06:41.996+0000] {processor.py:186} INFO - Started process (PID=319) to work on /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:06:42.005+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/approval_workflow.py for tasks to queue
+[2025-04-16T04:06:42.007+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:06:42.007+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:06:42.489+0000] {processor.py:925} INFO - DAG(s) 'approval_workflow' retrieved from /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:06:42.508+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:06:42.507+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-16T04:06:42.519+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:06:42.519+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_workflow to None, run_after=None
+[2025-04-16T04:06:42.535+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/approval_workflow.py took 0.544 seconds
+[2025-04-16T04:07:13.185+0000] {processor.py:186} INFO - Started process (PID=331) to work on /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:07:13.195+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/approval_workflow.py for tasks to queue
+[2025-04-16T04:07:13.199+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:07:13.198+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:07:13.662+0000] {processor.py:925} INFO - DAG(s) 'approval_workflow' retrieved from /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:07:13.681+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:07:13.680+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-16T04:07:13.694+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:07:13.693+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_workflow to None, run_after=None
+[2025-04-16T04:07:13.709+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/approval_workflow.py took 0.540 seconds
+[2025-04-16T04:07:44.216+0000] {processor.py:186} INFO - Started process (PID=343) to work on /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:07:44.219+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/approval_workflow.py for tasks to queue
+[2025-04-16T04:07:44.226+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:07:44.225+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:07:44.710+0000] {processor.py:925} INFO - DAG(s) 'approval_workflow' retrieved from /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:07:44.730+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:07:44.730+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-16T04:07:44.742+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:07:44.742+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_workflow to None, run_after=None
+[2025-04-16T04:07:44.768+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/approval_workflow.py took 0.571 seconds
+[2025-04-16T04:08:15.467+0000] {processor.py:186} INFO - Started process (PID=355) to work on /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:08:15.468+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/approval_workflow.py for tasks to queue
+[2025-04-16T04:08:15.471+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:08:15.471+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:08:16.038+0000] {processor.py:925} INFO - DAG(s) 'approval_workflow' retrieved from /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:08:16.059+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:08:16.058+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-16T04:08:16.075+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:08:16.075+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_workflow to None, run_after=None
+[2025-04-16T04:08:16.095+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/approval_workflow.py took 0.638 seconds
+[2025-04-16T04:08:46.619+0000] {processor.py:186} INFO - Started process (PID=367) to work on /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:08:46.627+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/approval_workflow.py for tasks to queue
+[2025-04-16T04:08:46.632+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:08:46.631+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:08:47.260+0000] {processor.py:925} INFO - DAG(s) 'approval_workflow' retrieved from /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:08:47.283+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:08:47.283+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-16T04:08:47.297+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:08:47.297+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_workflow to None, run_after=None
+[2025-04-16T04:08:47.318+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/approval_workflow.py took 0.708 seconds
+[2025-04-16T04:09:17.979+0000] {processor.py:186} INFO - Started process (PID=380) to work on /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:09:17.980+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/approval_workflow.py for tasks to queue
+[2025-04-16T04:09:17.983+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:09:17.982+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:09:18.506+0000] {processor.py:925} INFO - DAG(s) 'approval_workflow' retrieved from /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:09:18.529+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:09:18.528+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-16T04:09:18.543+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:09:18.542+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_workflow to None, run_after=None
+[2025-04-16T04:09:18.562+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/approval_workflow.py took 0.597 seconds
+[2025-04-16T04:09:49.410+0000] {processor.py:186} INFO - Started process (PID=391) to work on /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:09:49.419+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/approval_workflow.py for tasks to queue
+[2025-04-16T04:09:49.423+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:09:49.422+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:09:50.072+0000] {processor.py:925} INFO - DAG(s) 'approval_workflow' retrieved from /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:09:50.092+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:09:50.092+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-16T04:09:50.106+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:09:50.105+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_workflow to None, run_after=None
+[2025-04-16T04:09:50.132+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/approval_workflow.py took 0.732 seconds
+[2025-04-16T04:10:20.380+0000] {processor.py:186} INFO - Started process (PID=403) to work on /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:10:20.381+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/approval_workflow.py for tasks to queue
+[2025-04-16T04:10:20.384+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:10:20.384+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:10:20.857+0000] {processor.py:925} INFO - DAG(s) 'approval_workflow' retrieved from /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:10:20.875+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:10:20.875+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-16T04:10:20.888+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:10:20.888+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_workflow to None, run_after=None
+[2025-04-16T04:10:20.911+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/approval_workflow.py took 0.542 seconds
+[2025-04-16T04:10:50.973+0000] {processor.py:186} INFO - Started process (PID=415) to work on /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:10:50.982+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/approval_workflow.py for tasks to queue
+[2025-04-16T04:10:50.984+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:10:50.984+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:10:51.597+0000] {processor.py:925} INFO - DAG(s) 'approval_workflow' retrieved from /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:10:51.623+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:10:51.622+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-16T04:10:51.639+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:10:51.639+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_workflow to None, run_after=None
+[2025-04-16T04:10:51.670+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/approval_workflow.py took 0.703 seconds
+[2025-04-16T04:11:22.058+0000] {processor.py:186} INFO - Started process (PID=428) to work on /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:11:22.067+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/approval_workflow.py for tasks to queue
+[2025-04-16T04:11:22.071+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:11:22.070+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:11:23.084+0000] {processor.py:925} INFO - DAG(s) 'approval_workflow' retrieved from /opt/airflow/dags/approval_workflow.py
+[2025-04-16T04:11:23.130+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:11:23.128+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-16T04:11:23.166+0000] {logging_mixin.py:190} INFO - [2025-04-16T04:11:23.165+0000] {dag.py:4180} INFO - Setting next_dagrun for approval_workflow to None, run_after=None
+[2025-04-16T04:11:23.211+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/approval_workflow.py took 1.162 seconds

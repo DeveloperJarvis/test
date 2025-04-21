@@ -1,0 +1,24 @@
+[2025-04-08T14:21:46.047+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-08T14:21:46.071+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: data_approval_dag.fetch_data manual__2025-04-08T14:21:41.404339+00:00 [queued]>
+[2025-04-08T14:21:46.083+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: data_approval_dag.fetch_data manual__2025-04-08T14:21:41.404339+00:00 [queued]>
+[2025-04-08T14:21:46.083+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 1
+[2025-04-08T14:21:46.101+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): fetch_data> on 2025-04-08 14:21:41.404339+00:00
+[2025-04-08T14:21:46.114+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=68) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-04-08T14:21:46.116+0000] {standard_task_runner.py:72} INFO - Started process 70 to run task
+[2025-04-08T14:21:46.116+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'data_approval_dag', 'fetch_data', 'manual__2025-04-08T14:21:41.404339+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/data_approval_dag.py', '--cfg-path', '/tmp/tmpfziss4k7']
+[2025-04-08T14:21:46.120+0000] {standard_task_runner.py:105} INFO - Job 3: Subtask fetch_data
+[2025-04-08T14:21:46.395+0000] {task_command.py:467} INFO - Running <TaskInstance: data_approval_dag.fetch_data manual__2025-04-08T14:21:41.404339+00:00 [running]> on host de8ffa646c15
+[2025-04-08T14:21:46.491+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='data_approval_dag' AIRFLOW_CTX_TASK_ID='fetch_data' AIRFLOW_CTX_EXECUTION_DATE='2025-04-08T14:21:41.404339+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-08T14:21:41.404339+00:00'
+[2025-04-08T14:21:46.492+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-08T14:21:46.523+0000] {logging_mixin.py:190} INFO - fetch_data execute..
+[2025-04-08T14:21:46.523+0000] {logging_mixin.py:190} INFO - Files in directory: ['data.xlsx']
+[2025-04-08T14:21:46.524+0000] {logging_mixin.py:190} INFO - data.xlsx
+[2025-04-08T14:21:46.524+0000] {logging_mixin.py:190} INFO - Error reading Excel file: Missing optional dependency 'openpyxl'.  Use pip or conda to install openpyxl.
+[2025-04-08T14:21:46.524+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-04-08T14:21:46.532+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-08T14:21:46.533+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=data_approval_dag, task_id=fetch_data, run_id=manual__2025-04-08T14:21:41.404339+00:00, execution_date=20250408T142141, start_date=20250408T142146, end_date=20250408T142146
+[2025-04-08T14:21:46.624+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-08T14:21:46.998+0000] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-04-08T14:21:47.007+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
