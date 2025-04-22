@@ -90,7 +90,7 @@ services:
       - ./plugins:/opt/airflow/plugins
       - ./config:/opt/airflow/config 
       - .:/sources  # <-- add this line
-      - ./config/webserver_config.py:/opt/airflow/webserver_config.py
+      - ./config/webserver_config.py:/opt/airflow/config/webserver_config.py
     depends_on:
       <<: *airflow-common-depends-on
       airflow-init:
