@@ -1,25 +1,39 @@
-{% extends "airflow/master.html" %}
-{% block content %}
-<h2>Welcome {{ user.username }}</h2>
+{% extends "airflow/main.html" %}
 
-<a href="/upload" class="btn btn-primary">
-    <i class="fa fa-upload"></i> Upload Dataset
-</a>
+{% block content %}
+<h2 class="mb-3">Welcome {{ user.username }}</h2>
+
+<div class="mb-4">
+    <a href="{{ url_for('UploadReviewView.upload') }}" class="btn btn-primary">
+        <i class="fa fa-upload"></i> Upload Dataset
+    </a>    
+</div>
 
 <h3 class="mt-4">Pending Approval</h3>
-<ul>
+<ul class="list-group mb-4">
     {% for row in pending_data %}
-    <li>
-        {{ row[1] }} (Age: {{ row[2] }}) <span class="badge bg-warning text-dark">Pending</span>
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+        <div>
+            {{ row[1] }} (Age: {{ row[2] }}) | (Department: {{ row[3] }}) | (Contact: {{ row[4]|int }}) | (Email: {{ row[5] }})
+        </div>
+        <div class="btn-group">
+            <form method="post" action="{{ url_for('UploadReviewView.approve', id=row[0]) }}">
+                <button type="submit" class="btn btn-success btn-sm">Approve</button>
+            </form>
+            <form method="post" action="{{ url_for('UploadReviewView.reject', id=row[0]) }}" class="ms-2">
+                <button type="submit" class="btn btn-danger btn-sm">Reject</button>
+            </form>
+        </div>
     </li>
     {% endfor %}
 </ul>
 
 <h3 class="mt-4">Approved Data</h3>
-<ul>
+<ul class="list-group">
     {% for row in approved_data %}
-    <li>
-        {{ row[1] }} (Age: {{ row[2] }}) <span class="badge bg-success">Approved</span>
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+        {{ row[1] }} (Age: {{ row[2] }}) | (Department: {{ row[3] }}) | (Contact: {{ row[4]|int }}) | (Email: {{ row[5] }})
+        <span class="badge bg-success">Approved</span>
     </li>
     {% endfor %}
 </ul>

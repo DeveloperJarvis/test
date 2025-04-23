@@ -16,15 +16,29 @@ def create_role(role_name, perms):
     # 🚫 Remove DAG and Task-related permissions
     removed = 0
     for perm in list(role.permissions):
-        if (
-            "dag" in perm.resource.name.lower()
-            or "task" in perm.resource.name.lower()
-            or "log" in perm.resource.name.lower()
-        ):
-            role.permissions.remove(perm)
-            removed += 1
+        try:
+            resource_name = perm.resource.name.lower()
+            action_name = perm.action.name.lower()
+
+            if (
+                "dag" in resource_name
+                or "task" in resource_name
+                or "log" in resource_name
+                or "browse" in resource_name
+                or "graph" in resource_name
+                or resource_name.startswith("dag_id:")
+                or resource_name in ["dags", "browse", "graph view", "task instances", "task logs"]
+                or "dag" in action_name
+                or "task" in action_name
+                or "log" in action_name
+            ):
+                role.permissions.remove(perm)
+                removed += 1
+        except Exception as e:
+            print(f"⚠️ Skipping perm during cleanup due to error: {e}")
     if removed:
         print(f"🧹 Removed {removed} DAG/Task/Log permissions from role '{role_name}'.")
+
 
     # ✅ Add specified custom permissions
     for perm_name, view_menu_name in perms:
@@ -52,14 +66,15 @@ create_role("DataAnalyst", [
     ("can_edit", "My Profile"),
     ("can_read", "My Profile"),
     ("can_read", "Permissions"),
-    ("can_read", "View Menus"),
-    ("menu_access", "Browse"),
-    ("menu_access", "Datasets"),
-    ("can_read", "Datasets"),
-    ("can_create", "Datasets"),
+    # ("can_read", "View Menus"),
+    # ("menu_access", "Browse"),
+    # ("menu_access", "Datasets"),
+    # ("can_read", "Datasets"),
+    # ("can_create", "Datasets"),
     ("can_read", "Website"),
     ("menu_access", "Hello Dashboard"),
+    ("can_read", "HelloView"),
     ("menu_access", "Custom"),
-    ("menu_access", "Approve/Reject"),
-    ("menu_access", "DataActions"),
+    # ("menu_access", "Approve/Reject"),
+    # ("menu_access", "DataActions"),
 ])

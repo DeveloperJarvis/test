@@ -1,50 +1,34 @@
-<!DOCTYPE html>
-<html>
-<head><title>Review Data</title></head>
-<body>
-    <h1>Pending Data Review</h1>
-    {% with messages = get_flashed_messages(with_categories=True) %}
-      {% if messages %}
-        {% for category, message in messages %}
-            {% set styles = {
-                'success': 'background-color:#d4edda; color:#155724;',
-                'warning': 'background-color:#fff3cd; color:#856404;',
-                'danger': 'background-color:#f8d7da; color:#721c24;',
-                'info': 'background-color:#d1ecf1; color:#0c5460;'
-            } %}
-            
-            <div style="padding:10px; margin-bottom:10px; border-radius:5px; {{ styles.get(category, styles['info']) }}">
-            {{ message }}
-            </div>        
-        {% endfor %}
-      {% endif %}
-    {% endwith %}
-    {% if data %}
-    <table border="1">
-        <thead>
-            <tr><th>ID</th><th>Name</th><th>Age</th><th>Action</th></tr>
-        </thead>
-        <tbody>
-        {% for row in data %}
-            <tr>
-                <td>{{ row.id }}</td>
-                <td>{{ row.name }}</td>
-                <td>{{ row.age }}</td>
-                <td>
-                    <form method="post" action="/approve/{{ row.id }}" style="display:inline">
-                        <button type="submit">Approve</button>
-                    </form>
-                    <form method="post" action="/reject/{{ row.id }}" style="display:inline">
-                        <button type="submit">Reject</button>
-                    </form>
-                </td>
-            </tr>
-        {% endfor %}
-        </tbody>
-    </table>
-    {% else %}
-        <p>No data pending approval.</p>
-    {% endif %}
-    <br><a href="/upload">Upload More Data</a>
-</body>
-</html>
+{% extends "airflow/main.html" %}
+
+{% block content %}
+<h2 class="mb-4">Dataset Review Panel</h2>
+
+<h3 class="mt-4">Pending Approval</h3>
+<ul class="list-group mb-4">
+    {% for row in pending_data %}
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+        <div>
+            {{ row[1] }} (Age: {{ row[2] }}) | (Department: {{ row[3] }}) | (Contact: {{ row[4] }}) | (Email: {{ row[5] }})
+        </div>
+        <div class="btn-group">
+            <form method="post" action="{{ url_for('UploadReviewView.approve', id=row[0]) }}">
+                <button type="submit" class="btn btn-success btn-sm">Approve</button>
+            </form>
+            <form method="post" action="{{ url_for('UploadReviewView.reject', id=row[0]) }}" class="ms-2">
+                <button type="submit" class="btn btn-danger btn-sm">Reject</button>
+            </form>
+        </div>
+    </li>
+    {% endfor %}
+</ul>
+
+<h3 class="mt-4">Approved Data</h3>
+<ul class="list-group">
+    {% for row in approved_data %}
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+        {{ row[1] }} (Age: {{ row[2] }})
+        <span class="badge bg-success">Approved</span>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

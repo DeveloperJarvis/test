@@ -256,7 +256,7 @@ services:
     command: >
       -c "
       echo 'Waiting for airflow-webserver...';
-      sleep 10;
+      sleep 2;
       echo 'Creating roles...';
       python /sources/config/create_roles.py 
       echo 'Adding custom permissions...'; 

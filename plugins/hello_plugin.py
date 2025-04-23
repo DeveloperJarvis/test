@@ -1,10 +1,11 @@
+# plugins/hello_plugin.py
+
 from airflow.plugins_manager import AirflowPlugin
 from flask_appbuilder import BaseView as AppBuilderBaseView, expose
 from flask_login import current_user, login_required
 from flask import Blueprint, redirect, render_template
 import os
 import sqlite3
-import logging
 
 # Blueprint for redirecting / and /home
 hello_blueprint = Blueprint('hello_blueprint', __name__)
@@ -25,6 +26,9 @@ class HelloView(AppBuilderBaseView):
     @expose("/")
     @login_required
     def role_based_home(self):
+        # Ensure login view is registered correctly
+        self.appbuilder.get_app.config['LOGIN_VIEW'] = 'AuthDBView.login'
+
         roles = [role.name for role in current_user.roles]
 
         if "DataAnalyst" in roles:
@@ -47,11 +51,18 @@ class HelloView(AppBuilderBaseView):
 
         return self.render_template("default_home.html", user=current_user)
 
+
+class CustomIndexView(AppBuilderBaseView):
+    route_base = "/home"
+
+    @expose("/")
+    @login_required
+    def index(self):
+        return redirect("/hello/")
+
+
 class HelloPlugin(AirflowPlugin):
     name = "hello_plugin"
-
-    def __init__(self):
-        logging.info("HelloPlugin is initialized")
 
     appbuilder_views = [
         {
@@ -63,7 +74,6 @@ class HelloPlugin(AirflowPlugin):
 
     flask_blueprints = [hello_blueprint]
 
-    # Add this to override /home route in the navbar
     appbuilder_menu_items = [
         {
             "name": "Home",
@@ -72,3 +82,6 @@ class HelloPlugin(AirflowPlugin):
             "href": "/hello/"
         }
     ]
+
+    # Optional: override index view if you want full control
+    index_view = CustomIndexView()

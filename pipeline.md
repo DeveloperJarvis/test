@@ -238,9 +238,36 @@ show flask_appbuilder details
 docker compose exec --user airflow airflow-webserver /home/airflow/.local/bin/pip show flask_appbuilder
 ```
 
+# List all routes inside flask app
+
+1. ✅ Method 1: Python snippet in the container
 ```bash
+docker compose exec airflow-webserver python
+```
+```python
+from airflow.www.app import create_app
+app = create_app()
+
+for rule in app.url_map.iter_rules():
+    print(f"{rule.endpoint:40s} -> {rule.rule}")
+
 ```
 ```bash
+Airflow.index                           -> /
+AuthDBView.login                        -> /login/
+AuthDBView.logout                       -> /logout/
+...
 ```
+2. ✅ Method 2: Use Flask CLI (if needed)
+
 ```bash
+docker compose exec airflow-webserver bash
+echo '
+from airflow.www.app import create_app
+app = create_app()
+
+for rule in app.url_map.iter_rules():
+    print(f"{rule.endpoint:40s} -> {rule.rule}")
+' > /tmp/routes.py && python /tmp/routes.py
+
 ```
