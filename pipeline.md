@@ -271,3 +271,8 @@ for rule in app.url_map.iter_rules():
 ' > /tmp/routes.py && python /tmp/routes.py
 
 ```
+
+create .env file
+```bash
+AIRFLOW_UID=5000
+```
