@@ -50,6 +50,7 @@ init_db()
 
 class UploadReviewView(AppBuilderBaseView):
     route_base = "/data"
+    default_view = "upload"  # ✅ Required
     template_folder = os.path.join(os.path.dirname(__file__), "templates")
 
     @expose("/upload", methods=["GET", "POST"])
